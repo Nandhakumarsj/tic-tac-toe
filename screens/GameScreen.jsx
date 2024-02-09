@@ -38,7 +38,7 @@ export default function TicTacToe() {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Text variant="headlineMedium">{status}</Text>
+        <Text variant="headlineLarge">{status}</Text>
       </View>
       <View style={styles.content}>
         <View style={{ flexDirection: "row" }}>
@@ -47,12 +47,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[0]}
             onPress={() => handlePress(0)}
           />
@@ -61,12 +62,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[1]}
             onPress={() => handlePress(1)}
           />
@@ -75,12 +77,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[2]}
             onPress={() => handlePress(2)}
           />
@@ -91,12 +94,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[3]}
             onPress={() => handlePress(3)}
           />
@@ -105,12 +109,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[4]}
             onPress={() => handlePress(4)}
           />
@@ -119,12 +124,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[5]}
             onPress={() => handlePress(5)}
           />
@@ -135,12 +141,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[6]}
             onPress={() => handlePress(6)}
           />
@@ -149,12 +156,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[7]}
             onPress={() => handlePress(7)}
           />
@@ -163,12 +171,13 @@ export default function TicTacToe() {
             style={{
               borderCurve: "circular",
               borderRadius: 6,
-              minWidth: 70,
+              minWidth: 80,
               borderWidth: 2,
               margin: 1,
               borderColor: "#19a",
+              justifyContent: 'center'
             }}
-            labelStyle={{ color: "#909" }}
+            labelStyle={{ color: "#2f222a", fontSize: 20 }}
             children={squares[8]}
             onPress={() => handlePress(8)}
           />
@@ -179,6 +188,7 @@ export default function TicTacToe() {
           children="Reset"
           mode="outlined"
           style={{ minWidth: 150 }}
+          labelStyle={{fontSize:18}}
           onPress={() => setSquares(Array(9).fill(null))}
         />
       </View>
